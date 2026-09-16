@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* 참고 화면(제이시스메디칼 A/S 통합 조회)의 색상 체계를 그대로 옮겨온 토큰 */
+@theme {
+  --color-navy: #1e3a5f;
+  --color-navy-dark: #152b47;
+  --color-navy-light: #2b5486;
+  --color-accent: #1961ac;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-line: #e2e5ea;
+  --color-line-soft: #eef0f3;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-txt: #1a1f29;
+  --color-sub: #6b7280;
+  --color-mute: #9aa3b2;
+
+  --color-bg: #f5f6f8;
+  --color-card: #ffffff;
+  --color-soft: #f6f8fb;
+
+  /* 사이드바 전용 강조색 (본문 화면은 남색 유지) */
+  --color-shell: #e74656;
+  --color-shell-dark: #c8303f;
+  --color-shell-soft: #fff1f3;
+  --color-sidebar-border: #ebedf0;
+
+  --font-sans: "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-txt);
+  font-family: var(--font-sans);
+  font-size: 14px;
 }

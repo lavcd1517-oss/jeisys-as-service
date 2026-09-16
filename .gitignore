@@ -36,6 +36,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# 삭제 대기 파일 (사용자가 직접 확인 후 삭제)
+/trash-can/*
+!/trash-can/.gitkeep
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*
